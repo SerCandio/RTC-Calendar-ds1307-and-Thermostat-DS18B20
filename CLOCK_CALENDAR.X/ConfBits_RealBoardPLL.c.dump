@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<dumps>
+  <platform name="win32A" char_bit="8" short_bit="16" int_bit="32" long_bit="32" long_long_bit="64" pointer_bit="32"/>
+  <rawtokens>
+    <file index="0" name="ConfBits_RealBoardPLL.c"/>
+    <file index="1" name="ConfBits_RealBoardPLL.h"/>
+    <tok fileIndex="0" linenr="1" column="1" str="#"/>
+    <tok fileIndex="0" linenr="1" column="2" str="include"/>
+    <tok fileIndex="0" linenr="1" column="10" str="&quot;ConfBits_RealBoardPLL.h&quot;"/>
+    <tok fileIndex="0" linenr="4" column="1" str="// PIC18F45K50 Configuration Bit Settings"/>
+    <tok fileIndex="0" linenr="6" column="1" str="// 'C' source line config statements"/>
+    <tok fileIndex="0" linenr="8" column="1" str="// CONFIG1L"/>
+    <tok fileIndex="0" linenr="9" column="1" str="#"/>
+    <tok fileIndex="0" linenr="9" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="9" column="9" str="config"/>
+    <tok fileIndex="0" linenr="9" column="16" str="PLLSEL"/>
+    <tok fileIndex="0" linenr="9" column="23" str="="/>
+    <tok fileIndex="0" linenr="9" column="25" str="PLL3X"/>
+    <tok fileIndex="0" linenr="9" column="33" str="// PLL Selection (3x clock multiplier)"/>
+    <tok fileIndex="0" linenr="10" column="1" str="#"/>
+    <tok fileIndex="0" linenr="10" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="10" column="9" str="config"/>
+    <tok fileIndex="0" linenr="10" column="16" str="CFGPLLEN"/>
+    <tok fileIndex="0" linenr="10" column="25" str="="/>
+    <tok fileIndex="0" linenr="10" column="27" str="ON"/>
+    <tok fileIndex="0" linenr="10" column="33" str="// PLL Enable Configuration bit (PLL Enabled)"/>
+    <tok fileIndex="0" linenr="11" column="1" str="#"/>
+    <tok fileIndex="0" linenr="11" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="11" column="9" str="config"/>
+    <tok fileIndex="0" linenr="11" column="16" str="CPUDIV"/>
+    <tok fileIndex="0" linenr="11" column="23" str="="/>
+    <tok fileIndex="0" linenr="11" column="25" str="NOCLKDIV"/>
+    <tok fileIndex="0" linenr="11" column="33" str="// CPU System Clock Postscaler (CPU uses system clock (no divide))"/>
+    <tok fileIndex="0" linenr="12" column="1" str="#"/>
+    <tok fileIndex="0" linenr="12" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="12" column="9" str="config"/>
+    <tok fileIndex="0" linenr="12" column="16" str="LS48MHZ"/>
+    <tok fileIndex="0" linenr="12" column="24" str="="/>
+    <tok fileIndex="0" linenr="12" column="26" str="SYS48X8"/>
+    <tok fileIndex="0" linenr="12" column="33" str="// Low Speed USB mode with 48 MHz system clock (System clock at 48 MHz, USB clock divider is set to 8)"/>
+    <tok fileIndex="0" linenr="14" column="1" str="// CONFIG1H"/>
+    <tok fileIndex="0" linenr="15" column="1" str="#"/>
+    <tok fileIndex="0" linenr="15" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="15" column="9" str="config"/>
+    <tok fileIndex="0" linenr="15" column="16" str="FOSC"/>
+    <tok fileIndex="0" linenr="15" column="21" str="="/>
+    <tok fileIndex="0" linenr="15" column="23" str="HSH"/>
+    <tok fileIndex="0" linenr="15" column="33" str="// Oscillator Selection (HS oscillator, high power 16MHz to 25MHz)"/>
+    <tok fileIndex="0" linenr="16" column="1" str="#"/>
+    <tok fileIndex="0" linenr="16" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="16" column="9" str="config"/>
+    <tok fileIndex="0" linenr="16" column="16" str="PCLKEN"/>
+    <tok fileIndex="0" linenr="16" column="23" str="="/>
+    <tok fileIndex="0" linenr="16" column="25" str="ON"/>
+    <tok fileIndex="0" linenr="16" column="33" str="// Primary Oscillator Shutdown (Primary oscillator enabled)"/>
+    <tok fileIndex="0" linenr="17" column="1" str="#"/>
+    <tok fileIndex="0" linenr="17" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="17" column="9" str="config"/>
+    <tok fileIndex="0" linenr="17" column="16" str="FCMEN"/>
+    <tok fileIndex="0" linenr="17" column="22" str="="/>
+    <tok fileIndex="0" linenr="17" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="17" column="33" str="// Fail-Safe Clock Monitor (Fail-Safe Clock Monitor disabled)"/>
+    <tok fileIndex="0" linenr="18" column="1" str="#"/>
+    <tok fileIndex="0" linenr="18" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="18" column="9" str="config"/>
+    <tok fileIndex="0" linenr="18" column="16" str="IESO"/>
+    <tok fileIndex="0" linenr="18" column="21" str="="/>
+    <tok fileIndex="0" linenr="18" column="23" str="OFF"/>
+    <tok fileIndex="0" linenr="18" column="33" str="// Internal/External Oscillator Switchover (Oscillator Switchover mode disabled)"/>
+    <tok fileIndex="0" linenr="20" column="1" str="// CONFIG2L"/>
+    <tok fileIndex="0" linenr="21" column="1" str="#"/>
+    <tok fileIndex="0" linenr="21" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="21" column="9" str="config"/>
+    <tok fileIndex="0" linenr="21" column="16" str="nPWRTEN"/>
+    <tok fileIndex="0" linenr="21" column="24" str="="/>
+    <tok fileIndex="0" linenr="21" column="26" str="ON"/>
+    <tok fileIndex="0" linenr="21" column="33" str="// Power-up Timer Enable (Power up timer enabled)"/>
+    <tok fileIndex="0" linenr="22" column="1" str="#"/>
+    <tok fileIndex="0" linenr="22" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="22" column="9" str="config"/>
+    <tok fileIndex="0" linenr="22" column="16" str="BOREN"/>
+    <tok fileIndex="0" linenr="22" column="22" str="="/>
+    <tok fileIndex="0" linenr="22" column="24" str="SBORDIS"/>
+    <tok fileIndex="0" linenr="22" column="33" str="// Brown-out Reset Enable (BOR enabled in hardware (SBOREN is ignored))"/>
+    <tok fileIndex="0" linenr="23" column="1" str="#"/>
+    <tok fileIndex="0" linenr="23" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="23" column="9" str="config"/>
+    <tok fileIndex="0" linenr="23" column="16" str="BORV"/>
+    <tok fileIndex="0" linenr="23" column="21" str="="/>
+    <tok fileIndex="0" linenr="23" column="23" str="190"/>
+    <tok fileIndex="0" linenr="23" column="33" str="// Brown-out Reset Voltage (BOR set to 1.9V nominal)"/>
+    <tok fileIndex="0" linenr="24" column="1" str="#"/>
+    <tok fileIndex="0" linenr="24" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="24" column="9" str="config"/>
+    <tok fileIndex="0" linenr="24" column="16" str="nLPBOR"/>
+    <tok fileIndex="0" linenr="24" column="23" str="="/>
+    <tok fileIndex="0" linenr="24" column="25" str="OFF"/>
+    <tok fileIndex="0" linenr="24" column="33" str="// Low-Power Brown-out Reset (Low-Power Brown-out Reset disabled)"/>
+    <tok fileIndex="0" linenr="26" column="1" str="// CONFIG2H"/>
+    <tok fileIndex="0" linenr="27" column="1" str="#"/>
+    <tok fileIndex="0" linenr="27" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="27" column="9" str="config"/>
+    <tok fileIndex="0" linenr="27" column="16" str="WDTEN"/>
+    <tok fileIndex="0" linenr="27" column="22" str="="/>
+    <tok fileIndex="0" linenr="27" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="27" column="33" str="// Watchdog Timer Enable bits (WDT disabled in hardware (SWDTEN ignored))"/>
+    <tok fileIndex="0" linenr="28" column="1" str="#"/>
+    <tok fileIndex="0" linenr="28" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="28" column="9" str="config"/>
+    <tok fileIndex="0" linenr="28" column="16" str="WDTPS"/>
+    <tok fileIndex="0" linenr="28" column="22" str="="/>
+    <tok fileIndex="0" linenr="28" column="24" str="32768"/>
+    <tok fileIndex="0" linenr="28" column="33" str="// Watchdog Timer Postscaler (1:32768)"/>
+    <tok fileIndex="0" linenr="30" column="1" str="// CONFIG3H"/>
+    <tok fileIndex="0" linenr="31" column="1" str="#"/>
+    <tok fileIndex="0" linenr="31" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="31" column="9" str="config"/>
+    <tok fileIndex="0" linenr="31" column="16" str="CCP2MX"/>
+    <tok fileIndex="0" linenr="31" column="23" str="="/>
+    <tok fileIndex="0" linenr="31" column="25" str="RC1"/>
+    <tok fileIndex="0" linenr="31" column="33" str="// CCP2 MUX bit (CCP2 input/output is multiplexed with RC1)"/>
+    <tok fileIndex="0" linenr="32" column="1" str="#"/>
+    <tok fileIndex="0" linenr="32" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="32" column="9" str="config"/>
+    <tok fileIndex="0" linenr="32" column="16" str="PBADEN"/>
+    <tok fileIndex="0" linenr="32" column="23" str="="/>
+    <tok fileIndex="0" linenr="32" column="25" str="ON"/>
+    <tok fileIndex="0" linenr="32" column="33" str="// PORTB A/D Enable bit (PORTB&lt;5:0&gt; pins are configured as analog input channels on Reset)"/>
+    <tok fileIndex="0" linenr="33" column="1" str="#"/>
+    <tok fileIndex="0" linenr="33" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="33" column="9" str="config"/>
+    <tok fileIndex="0" linenr="33" column="16" str="T3CMX"/>
+    <tok fileIndex="0" linenr="33" column="22" str="="/>
+    <tok fileIndex="0" linenr="33" column="24" str="RB5"/>
+    <tok fileIndex="0" linenr="33" column="33" str="// Timer3 Clock Input MUX bit (T3CKI function is on RB5)"/>
+    <tok fileIndex="0" linenr="34" column="1" str="#"/>
+    <tok fileIndex="0" linenr="34" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="34" column="9" str="config"/>
+    <tok fileIndex="0" linenr="34" column="16" str="SDOMX"/>
+    <tok fileIndex="0" linenr="34" column="22" str="="/>
+    <tok fileIndex="0" linenr="34" column="24" str="RB3"/>
+    <tok fileIndex="0" linenr="34" column="33" str="// SDO Output MUX bit (SDO function is on RB3)"/>
+    <tok fileIndex="0" linenr="35" column="1" str="#"/>
+    <tok fileIndex="0" linenr="35" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="35" column="9" str="config"/>
+    <tok fileIndex="0" linenr="35" column="16" str="MCLRE"/>
+    <tok fileIndex="0" linenr="35" column="22" str="="/>
+    <tok fileIndex="0" linenr="35" column="24" str="ON"/>
+    <tok fileIndex="0" linenr="35" column="33" str="// Master Clear Reset Pin Enable (MCLR pin enabled; RE3 input disabled)"/>
+    <tok fileIndex="0" linenr="37" column="1" str="// CONFIG4L"/>
+    <tok fileIndex="0" linenr="38" column="1" str="#"/>
+    <tok fileIndex="0" linenr="38" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="38" column="9" str="config"/>
+    <tok fileIndex="0" linenr="38" column="16" str="STVREN"/>
+    <tok fileIndex="0" linenr="38" column="23" str="="/>
+    <tok fileIndex="0" linenr="38" column="25" str="ON"/>
+    <tok fileIndex="0" linenr="38" column="33" str="// Stack Full/Underflow Reset (Stack full/underflow will cause Reset)"/>
+    <tok fileIndex="0" linenr="39" column="1" str="#"/>
+    <tok fileIndex="0" linenr="39" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="39" column="9" str="config"/>
+    <tok fileIndex="0" linenr="39" column="16" str="LVP"/>
+    <tok fileIndex="0" linenr="39" column="20" str="="/>
+    <tok fileIndex="0" linenr="39" column="22" str="ON"/>
+    <tok fileIndex="0" linenr="39" column="33" str="// Single-Supply ICSP Enable bit (Single-Supply ICSP enabled if MCLRE is also 1)"/>
+    <tok fileIndex="0" linenr="40" column="1" str="#"/>
+    <tok fileIndex="0" linenr="40" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="40" column="9" str="config"/>
+    <tok fileIndex="0" linenr="40" column="16" str="ICPRT"/>
+    <tok fileIndex="0" linenr="40" column="22" str="="/>
+    <tok fileIndex="0" linenr="40" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="40" column="33" str="// Dedicated In-Circuit Debug/Programming Port Enable (ICPORT disabled)"/>
+    <tok fileIndex="0" linenr="41" column="1" str="#"/>
+    <tok fileIndex="0" linenr="41" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="41" column="9" str="config"/>
+    <tok fileIndex="0" linenr="41" column="16" str="XINST"/>
+    <tok fileIndex="0" linenr="41" column="22" str="="/>
+    <tok fileIndex="0" linenr="41" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="41" column="33" str="// Extended Instruction Set Enable bit (Instruction set extension and Indexed Addressing mode disabled)"/>
+    <tok fileIndex="0" linenr="43" column="1" str="// CONFIG5L"/>
+    <tok fileIndex="0" linenr="44" column="1" str="#"/>
+    <tok fileIndex="0" linenr="44" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="44" column="9" str="config"/>
+    <tok fileIndex="0" linenr="44" column="16" str="CP0"/>
+    <tok fileIndex="0" linenr="44" column="20" str="="/>
+    <tok fileIndex="0" linenr="44" column="22" str="OFF"/>
+    <tok fileIndex="0" linenr="44" column="33" str="// Block 0 Code Protect (Block 0 is not code-protected)"/>
+    <tok fileIndex="0" linenr="45" column="1" str="#"/>
+    <tok fileIndex="0" linenr="45" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="45" column="9" str="config"/>
+    <tok fileIndex="0" linenr="45" column="16" str="CP1"/>
+    <tok fileIndex="0" linenr="45" column="20" str="="/>
+    <tok fileIndex="0" linenr="45" column="22" str="OFF"/>
+    <tok fileIndex="0" linenr="45" column="33" str="// Block 1 Code Protect (Block 1 is not code-protected)"/>
+    <tok fileIndex="0" linenr="46" column="1" str="#"/>
+    <tok fileIndex="0" linenr="46" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="46" column="9" str="config"/>
+    <tok fileIndex="0" linenr="46" column="16" str="CP2"/>
+    <tok fileIndex="0" linenr="46" column="20" str="="/>
+    <tok fileIndex="0" linenr="46" column="22" str="OFF"/>
+    <tok fileIndex="0" linenr="46" column="33" str="// Block 2 Code Protect (Block 2 is not code-protected)"/>
+    <tok fileIndex="0" linenr="47" column="1" str="#"/>
+    <tok fileIndex="0" linenr="47" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="47" column="9" str="config"/>
+    <tok fileIndex="0" linenr="47" column="16" str="CP3"/>
+    <tok fileIndex="0" linenr="47" column="20" str="="/>
+    <tok fileIndex="0" linenr="47" column="22" str="OFF"/>
+    <tok fileIndex="0" linenr="47" column="33" str="// Block 3 Code Protect (Block 3 is not code-protected)"/>
+    <tok fileIndex="0" linenr="49" column="1" str="// CONFIG5H"/>
+    <tok fileIndex="0" linenr="50" column="1" str="#"/>
+    <tok fileIndex="0" linenr="50" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="50" column="9" str="config"/>
+    <tok fileIndex="0" linenr="50" column="16" str="CPB"/>
+    <tok fileIndex="0" linenr="50" column="20" str="="/>
+    <tok fileIndex="0" linenr="50" column="22" str="OFF"/>
+    <tok fileIndex="0" linenr="50" column="33" str="// Boot Block Code Protect (Boot block is not code-protected)"/>
+    <tok fileIndex="0" linenr="51" column="1" str="#"/>
+    <tok fileIndex="0" linenr="51" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="51" column="9" str="config"/>
+    <tok fileIndex="0" linenr="51" column="16" str="CPD"/>
+    <tok fileIndex="0" linenr="51" column="20" str="="/>
+    <tok fileIndex="0" linenr="51" column="22" str="OFF"/>
+    <tok fileIndex="0" linenr="51" column="33" str="// Data EEPROM Code Protect (Data EEPROM is not code-protected)"/>
+    <tok fileIndex="0" linenr="53" column="1" str="// CONFIG6L"/>
+    <tok fileIndex="0" linenr="54" column="1" str="#"/>
+    <tok fileIndex="0" linenr="54" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="54" column="9" str="config"/>
+    <tok fileIndex="0" linenr="54" column="16" str="WRT0"/>
+    <tok fileIndex="0" linenr="54" column="21" str="="/>
+    <tok fileIndex="0" linenr="54" column="23" str="OFF"/>
+    <tok fileIndex="0" linenr="54" column="33" str="// Block 0 Write Protect (Block 0 (0800-1FFFh) is not write-protected)"/>
+    <tok fileIndex="0" linenr="55" column="1" str="#"/>
+    <tok fileIndex="0" linenr="55" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="55" column="9" str="config"/>
+    <tok fileIndex="0" linenr="55" column="16" str="WRT1"/>
+    <tok fileIndex="0" linenr="55" column="21" str="="/>
+    <tok fileIndex="0" linenr="55" column="23" str="OFF"/>
+    <tok fileIndex="0" linenr="55" column="33" str="// Block 1 Write Protect (Block 1 (2000-3FFFh) is not write-protected)"/>
+    <tok fileIndex="0" linenr="56" column="1" str="#"/>
+    <tok fileIndex="0" linenr="56" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="56" column="9" str="config"/>
+    <tok fileIndex="0" linenr="56" column="16" str="WRT2"/>
+    <tok fileIndex="0" linenr="56" column="21" str="="/>
+    <tok fileIndex="0" linenr="56" column="23" str="OFF"/>
+    <tok fileIndex="0" linenr="56" column="33" str="// Block 2 Write Protect (Block 2 (04000-5FFFh) is not write-protected)"/>
+    <tok fileIndex="0" linenr="57" column="1" str="#"/>
+    <tok fileIndex="0" linenr="57" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="57" column="9" str="config"/>
+    <tok fileIndex="0" linenr="57" column="16" str="WRT3"/>
+    <tok fileIndex="0" linenr="57" column="21" str="="/>
+    <tok fileIndex="0" linenr="57" column="23" str="OFF"/>
+    <tok fileIndex="0" linenr="57" column="33" str="// Block 3 Write Protect (Block 3 (06000-7FFFh) is not write-protected)"/>
+    <tok fileIndex="0" linenr="59" column="1" str="// CONFIG6H"/>
+    <tok fileIndex="0" linenr="60" column="1" str="#"/>
+    <tok fileIndex="0" linenr="60" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="60" column="9" str="config"/>
+    <tok fileIndex="0" linenr="60" column="16" str="WRTC"/>
+    <tok fileIndex="0" linenr="60" column="21" str="="/>
+    <tok fileIndex="0" linenr="60" column="23" str="OFF"/>
+    <tok fileIndex="0" linenr="60" column="33" str="// Configuration Registers Write Protect (Configuration registers (300000-3000FFh) are not write-protected)"/>
+    <tok fileIndex="0" linenr="61" column="1" str="#"/>
+    <tok fileIndex="0" linenr="61" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="61" column="9" str="config"/>
+    <tok fileIndex="0" linenr="61" column="16" str="WRTB"/>
+    <tok fileIndex="0" linenr="61" column="21" str="="/>
+    <tok fileIndex="0" linenr="61" column="23" str="OFF"/>
+    <tok fileIndex="0" linenr="61" column="33" str="// Boot Block Write Protect (Boot block (0000-7FFh) is not write-protected)"/>
+    <tok fileIndex="0" linenr="62" column="1" str="#"/>
+    <tok fileIndex="0" linenr="62" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="62" column="9" str="config"/>
+    <tok fileIndex="0" linenr="62" column="16" str="WRTD"/>
+    <tok fileIndex="0" linenr="62" column="21" str="="/>
+    <tok fileIndex="0" linenr="62" column="23" str="OFF"/>
+    <tok fileIndex="0" linenr="62" column="33" str="// Data EEPROM Write Protect (Data EEPROM is not write-protected)"/>
+    <tok fileIndex="0" linenr="64" column="1" str="// CONFIG7L"/>
+    <tok fileIndex="0" linenr="65" column="1" str="#"/>
+    <tok fileIndex="0" linenr="65" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="65" column="9" str="config"/>
+    <tok fileIndex="0" linenr="65" column="16" str="EBTR0"/>
+    <tok fileIndex="0" linenr="65" column="22" str="="/>
+    <tok fileIndex="0" linenr="65" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="65" column="33" str="// Block 0 Table Read Protect (Block 0 is not protected from table reads executed in other blocks)"/>
+    <tok fileIndex="0" linenr="66" column="1" str="#"/>
+    <tok fileIndex="0" linenr="66" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="66" column="9" str="config"/>
+    <tok fileIndex="0" linenr="66" column="16" str="EBTR1"/>
+    <tok fileIndex="0" linenr="66" column="22" str="="/>
+    <tok fileIndex="0" linenr="66" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="66" column="33" str="// Block 1 Table Read Protect (Block 1 is not protected from table reads executed in other blocks)"/>
+    <tok fileIndex="0" linenr="67" column="1" str="#"/>
+    <tok fileIndex="0" linenr="67" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="67" column="9" str="config"/>
+    <tok fileIndex="0" linenr="67" column="16" str="EBTR2"/>
+    <tok fileIndex="0" linenr="67" column="22" str="="/>
+    <tok fileIndex="0" linenr="67" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="67" column="33" str="// Block 2 Table Read Protect (Block 2 is not protected from table reads executed in other blocks)"/>
+    <tok fileIndex="0" linenr="68" column="1" str="#"/>
+    <tok fileIndex="0" linenr="68" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="68" column="9" str="config"/>
+    <tok fileIndex="0" linenr="68" column="16" str="EBTR3"/>
+    <tok fileIndex="0" linenr="68" column="22" str="="/>
+    <tok fileIndex="0" linenr="68" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="68" column="33" str="// Block 3 Table Read Protect (Block 3 is not protected from table reads executed in other blocks)"/>
+    <tok fileIndex="0" linenr="70" column="1" str="// CONFIG7H"/>
+    <tok fileIndex="0" linenr="71" column="1" str="#"/>
+    <tok fileIndex="0" linenr="71" column="2" str="pragma"/>
+    <tok fileIndex="0" linenr="71" column="9" str="config"/>
+    <tok fileIndex="0" linenr="71" column="16" str="EBTRB"/>
+    <tok fileIndex="0" linenr="71" column="22" str="="/>
+    <tok fileIndex="0" linenr="71" column="24" str="OFF"/>
+    <tok fileIndex="0" linenr="71" column="33" str="// Boot Block Table Read Protect (Boot block is not protected from table reads executed in other blocks)"/>
+    <tok fileIndex="0" linenr="73" column="1" str="// #pragma config statements should precede project file includes."/>
+    <tok fileIndex="0" linenr="74" column="1" str="// Use project enums instead of #define for ON and OFF."/>
+    <tok fileIndex="0" linenr="76" column="1" str="#"/>
+    <tok fileIndex="0" linenr="76" column="2" str="include"/>
+    <tok fileIndex="0" linenr="76" column="10" str="&lt;xc.h&gt;"/>
+    <tok fileIndex="0" linenr="79" column="1" str="extern"/>
+    <tok fileIndex="0" linenr="79" column="8" str="void"/>
+    <tok fileIndex="0" linenr="79" column="13" str="OSCILATOR_Init"/>
+    <tok fileIndex="0" linenr="79" column="27" str="("/>
+    <tok fileIndex="0" linenr="79" column="28" str="void"/>
+    <tok fileIndex="0" linenr="79" column="32" str=")"/>
+    <tok fileIndex="0" linenr="79" column="33" str="{"/>
+    <tok fileIndex="0" linenr="80" column="5" str="OSCCONbits"/>
+    <tok fileIndex="0" linenr="80" column="15" str="."/>
+    <tok fileIndex="0" linenr="80" column="16" str="OSTS"/>
+    <tok fileIndex="0" linenr="80" column="20" str="="/>
+    <tok fileIndex="0" linenr="80" column="21" str="1"/>
+    <tok fileIndex="0" linenr="80" column="22" str=";"/>
+    <tok fileIndex="0" linenr="80" column="24" str="//Device is running from the clock defined by FOSC&lt;3:0&gt; of the CONFIG1H register"/>
+    <tok fileIndex="0" linenr="81" column="5" str="OSCCON2bits"/>
+    <tok fileIndex="0" linenr="81" column="16" str="."/>
+    <tok fileIndex="0" linenr="81" column="17" str="PLLEN"/>
+    <tok fileIndex="0" linenr="81" column="22" str="="/>
+    <tok fileIndex="0" linenr="81" column="23" str="1"/>
+    <tok fileIndex="0" linenr="81" column="24" str=";"/>
+    <tok fileIndex="0" linenr="81" column="26" str="// PLL Enabled"/>
+    <tok fileIndex="0" linenr="82" column="5" str="OSCCONbits"/>
+    <tok fileIndex="0" linenr="82" column="15" str="."/>
+    <tok fileIndex="0" linenr="82" column="16" str="SCS"/>
+    <tok fileIndex="0" linenr="82" column="19" str="="/>
+    <tok fileIndex="0" linenr="82" column="20" str="0b00"/>
+    <tok fileIndex="0" linenr="82" column="24" str=";"/>
+    <tok fileIndex="0" linenr="82" column="26" str="//Primary clock (determined by FOSC&lt;3:0&gt; in CONFIG1H)."/>
+    <tok fileIndex="0" linenr="83" column="5" str="OSCCONbits"/>
+    <tok fileIndex="0" linenr="83" column="15" str="."/>
+    <tok fileIndex="0" linenr="83" column="16" str="IDLEN"/>
+    <tok fileIndex="0" linenr="83" column="21" str="="/>
+    <tok fileIndex="0" linenr="83" column="22" str="1"/>
+    <tok fileIndex="0" linenr="83" column="23" str=";"/>
+    <tok fileIndex="0" linenr="83" column="25" str="//Device enters IDLE mode on sleep instruction"/>
+    <tok fileIndex="0" linenr="84" column="1" str="}"/>
+  </rawtokens>
+  <suppressions>
+  </suppressions>
+<dump cfg="">
+  <standards>
+    <c version="c11"/>
+    <cpp version="c++20"/>
+  </standards>
+  <directivelist>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="1" str="#include &quot;ConfBits_RealBoardPLL.h&quot;"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="9" str="#pragma config PLLSEL = PLL3X"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="10" str="#pragma config CFGPLLEN = ON"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="11" str="#pragma config CPUDIV = NOCLKDIV"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="12" str="#pragma config LS48MHZ = SYS48X8"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="15" str="#pragma config FOSC = HSH"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="16" str="#pragma config PCLKEN = ON"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="17" str="#pragma config FCMEN = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="18" str="#pragma config IESO = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="21" str="#pragma config nPWRTEN = ON"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="22" str="#pragma config BOREN = SBORDIS"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="23" str="#pragma config BORV = 190"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="24" str="#pragma config nLPBOR = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="27" str="#pragma config WDTEN = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="28" str="#pragma config WDTPS = 32768"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="31" str="#pragma config CCP2MX = RC1"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="32" str="#pragma config PBADEN = ON"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="33" str="#pragma config T3CMX = RB5"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="34" str="#pragma config SDOMX = RB3"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="35" str="#pragma config MCLRE = ON"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="38" str="#pragma config STVREN = ON"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="39" str="#pragma config LVP = ON"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="40" str="#pragma config ICPRT = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="41" str="#pragma config XINST = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="44" str="#pragma config CP0 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="45" str="#pragma config CP1 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="46" str="#pragma config CP2 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="47" str="#pragma config CP3 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="50" str="#pragma config CPB = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="51" str="#pragma config CPD = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="54" str="#pragma config WRT0 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="55" str="#pragma config WRT1 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="56" str="#pragma config WRT2 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="57" str="#pragma config WRT3 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="60" str="#pragma config WRTC = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="61" str="#pragma config WRTB = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="62" str="#pragma config WRTD = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="65" str="#pragma config EBTR0 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="66" str="#pragma config EBTR1 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="67" str="#pragma config EBTR2 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="68" str="#pragma config EBTR3 = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="71" str="#pragma config EBTRB = OFF"/>
+    <directive file="ConfBits_RealBoardPLL.c" linenr="76" str="#include &lt;xc.h&gt;"/>
+    <directive file="ConfBits_RealBoardPLL.h" linenr="8" str="#ifndef CONFBITS_REALBOARDPLL_H"/>
+    <directive file="ConfBits_RealBoardPLL.h" linenr="9" str="#define CONFBITS_REALBOARDPLL_H"/>
+    <directive file="ConfBits_RealBoardPLL.h" linenr="11" str="#define _XTAL_FREQ 48000000UL"/>
+    <directive file="ConfBits_RealBoardPLL.h" linenr="19" str="#endif"/>
+  </directivelist>
+  <tokenlist>
+    <token id="025AB570" file="ConfBits_RealBoardPLL.h" linenr="17" column="1" str="extern" scope="0131C618" type="name"/>
+    <token id="025AB070" file="ConfBits_RealBoardPLL.h" linenr="17" column="8" str="void" scope="0131C618" type="name"/>
+    <token id="025AAFB0" file="ConfBits_RealBoardPLL.h" linenr="17" column="13" str="OSCILATOR_Init" scope="0131C618" type="name" function="02976738" astParent="025AAF30"/>
+    <token id="025AAF30" file="ConfBits_RealBoardPLL.h" linenr="17" column="27" str="(" scope="0131C618" link="025AB4B0" astOperand1="025AAFB0" valueType-type="void"/>
+    <token id="025AB4B0" file="ConfBits_RealBoardPLL.h" linenr="17" column="32" str=")" scope="0131C618" link="025AAF30"/>
+    <token id="025AB470" file="ConfBits_RealBoardPLL.h" linenr="17" column="33" str=";" scope="0131C618"/>
+    <token id="025AB1F0" file="ConfBits_RealBoardPLL.c" linenr="79" column="1" str="extern" scope="0131C618" type="name"/>
+    <token id="025AB1B0" file="ConfBits_RealBoardPLL.c" linenr="79" column="8" str="void" scope="0131C618" type="name"/>
+    <token id="025AAFF0" file="ConfBits_RealBoardPLL.c" linenr="79" column="13" str="OSCILATOR_Init" scope="0131C618" type="name" function="02976738" astParent="025AB230"/>
+    <token id="025AB230" file="ConfBits_RealBoardPLL.c" linenr="79" column="27" str="(" scope="0131C618" link="025AB370" astOperand1="025AAFF0" valueType-type="void"/>
+    <token id="025AB370" file="ConfBits_RealBoardPLL.c" linenr="79" column="32" str=")" scope="0131C618" link="025AB230"/>
+    <token id="025AB3B0" file="ConfBits_RealBoardPLL.c" linenr="79" column="33" str="{" scope="0131C6B0" link="0131B4B0"/>
+    <token id="0131B270" file="ConfBits_RealBoardPLL.c" linenr="80" column="5" str="OSCCONbits" scope="0131C6B0" type="name" astParent="0131AF70"/>
+    <token id="0131AF70" file="ConfBits_RealBoardPLL.c" linenr="80" column="15" str="." scope="0131C6B0" astParent="0131B0F0" astOperand1="0131B270" astOperand2="0131B3B0"/>
+    <token id="0131B3B0" file="ConfBits_RealBoardPLL.c" linenr="80" column="16" str="OSTS" scope="0131C6B0" type="name" astParent="0131AF70"/>
+    <token id="0131B0F0" file="ConfBits_RealBoardPLL.c" linenr="80" column="20" str="=" scope="0131C6B0" type="op" isAssignmentOp="True" astOperand1="0131AF70" astOperand2="0131B530"/>
+    <token id="0131B530" file="ConfBits_RealBoardPLL.c" linenr="80" column="21" str="1" scope="0131C6B0" type="number" isInt="True" values="01318F90" astParent="0131B0F0" valueType-type="int" valueType-sign="signed"/>
+    <token id="0131AFF0" file="ConfBits_RealBoardPLL.c" linenr="80" column="22" str=";" scope="0131C6B0"/>
+    <token id="0131B430" file="ConfBits_RealBoardPLL.c" linenr="81" column="5" str="OSCCON2bits" scope="0131C6B0" type="name" astParent="0131B3F0"/>
+    <token id="0131B3F0" file="ConfBits_RealBoardPLL.c" linenr="81" column="16" str="." scope="0131C6B0" astParent="0131B030" astOperand1="0131B430" astOperand2="0131AEF0"/>
+    <token id="0131AEF0" file="ConfBits_RealBoardPLL.c" linenr="81" column="17" str="PLLEN" scope="0131C6B0" type="name" astParent="0131B3F0"/>
+    <token id="0131B030" file="ConfBits_RealBoardPLL.c" linenr="81" column="22" str="=" scope="0131C6B0" type="op" isAssignmentOp="True" astOperand1="0131B3F0" astOperand2="0131B470"/>
+    <token id="0131B470" file="ConfBits_RealBoardPLL.c" linenr="81" column="23" str="1" scope="0131C6B0" type="number" isInt="True" values="01318FA0" astParent="0131B030" valueType-type="int" valueType-sign="signed"/>
+    <token id="0131B130" file="ConfBits_RealBoardPLL.c" linenr="81" column="24" str=";" scope="0131C6B0"/>
+    <token id="0131B2B0" file="ConfBits_RealBoardPLL.c" linenr="82" column="5" str="OSCCONbits" scope="0131C6B0" type="name" astParent="0131ADF0"/>
+    <token id="0131ADF0" file="ConfBits_RealBoardPLL.c" linenr="82" column="15" str="." scope="0131C6B0" astParent="0131AE70" astOperand1="0131B2B0" astOperand2="0131B2F0"/>
+    <token id="0131B2F0" file="ConfBits_RealBoardPLL.c" linenr="82" column="16" str="SCS" scope="0131C6B0" type="name" astParent="0131ADF0"/>
+    <token id="0131AE70" file="ConfBits_RealBoardPLL.c" linenr="82" column="19" str="=" scope="0131C6B0" type="op" isAssignmentOp="True" astOperand1="0131ADF0" astOperand2="0131B330"/>
+    <token id="0131B330" file="ConfBits_RealBoardPLL.c" linenr="82" column="20" str="0b00" scope="0131C6B0" type="number" isInt="True" values="01318FC0" astParent="0131AE70" valueType-type="int" valueType-sign="signed"/>
+    <token id="0131B1B0" file="ConfBits_RealBoardPLL.c" linenr="82" column="24" str=";" scope="0131C6B0"/>
+    <token id="0131B070" file="ConfBits_RealBoardPLL.c" linenr="83" column="5" str="OSCCONbits" scope="0131C6B0" type="name" astParent="0131B0B0"/>
+    <token id="0131B0B0" file="ConfBits_RealBoardPLL.c" linenr="83" column="15" str="." scope="0131C6B0" astParent="0131B170" astOperand1="0131B070" astOperand2="0131AFB0"/>
+    <token id="0131AFB0" file="ConfBits_RealBoardPLL.c" linenr="83" column="16" str="IDLEN" scope="0131C6B0" type="name" astParent="0131B0B0"/>
+    <token id="0131B170" file="ConfBits_RealBoardPLL.c" linenr="83" column="21" str="=" scope="0131C6B0" type="op" isAssignmentOp="True" astOperand1="0131B0B0" astOperand2="0131AEB0"/>
+    <token id="0131AEB0" file="ConfBits_RealBoardPLL.c" linenr="83" column="22" str="1" scope="0131C6B0" type="number" isInt="True" values="013190B0" astParent="0131B170" valueType-type="int" valueType-sign="signed"/>
+    <token id="0131B370" file="ConfBits_RealBoardPLL.c" linenr="83" column="23" str=";" scope="0131C6B0"/>
+    <token id="0131B4B0" file="ConfBits_RealBoardPLL.c" linenr="84" column="1" str="}" scope="0131C6B0" link="025AB3B0"/>
+  </tokenlist>
+  <scopes>
+    <scope id="0131C618" type="Global">
+      <functionList>
+        <function id="02976738" tokenDef="025AAFB0" name="OSCILATOR_Init" type="Function"/>
+      </functionList>
+    </scope>
+    <scope id="0131C6B0" type="Function" className="OSCILATOR_Init" bodyStart="025AB3B0" bodyEnd="0131B4B0" nestedIn="0131C618" function="02976738"/>
+  </scopes>
+  <variables>
+  </variables>
+  <valueflow>
+    <values id="01318F90">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="01318FA0">
+      <value intvalue="1" known="true"/>
+    </values>
+    <values id="01318FC0">
+      <value intvalue="0" known="true"/>
+    </values>
+    <values id="013190B0">
+      <value intvalue="1" known="true"/>
+    </values>
+  </valueflow>
+</dump>
+</dumps>
