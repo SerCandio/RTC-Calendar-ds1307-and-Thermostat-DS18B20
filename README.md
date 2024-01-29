@@ -1,7 +1,7 @@
 # RTC-Calendar-ds1307-and-Thermostat-DS18B20
 Mini- Proyecto de Reloj de Tiempo Real (usando ds1307) con alarma de Buzzer y Termostato de Temperatura(con el sensor ds18b20) con alarmas de limites
 
-(imagen real board)
+![IMG_20240129_152216](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/9a102ca9-21bf-4f7e-907a-c9d0ffe49ac6)
 
 <h2 dir="auto" tabindex="-1">DESCRIPCION Y EXPLICACION:</h2>
 Este sencillo proyecto es capaz de mostrar la informacion de tiempo real conformado por la fecha y la hora asi como la informacion de temperatura ambiente a traves de un display LCD16X2 y por puerto de consola EUSART ; asimismo el usuario sera capaz de pre-establecer una fecha y hora acorde la actual y establecer alarmas sea de tiempo o de limite alto o bajo de temperatura.
