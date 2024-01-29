@@ -20,7 +20,12 @@ Nuestra <B><A HREF="https://github.com/SerCandio/Microcontrolador-PIC18F/blob/ma
 
 <B>3.</B> Se actualiza las salidas acorde
 
-Entonces estructuramos 8 tareas a fin de leer el sensor de temperatura ds18b20 y la informacion de tiempo del DS1307 para luego evaluar si se ejecuta o no una alarma (3 primeras tareas) y posibilitar el modificado del tiempo actual, alarmas de manera asincronica para finalmente mostrar toda la data actual por UART:
+Entonces estructuramos 8 tareas a fin de leer el sensor de temperatura ds18b20 y la informacion de tiempo del DS1307 para luego evaluar si se ejecuta o no una alarma (4 primeras tareas) mostrando la data por LCD 16X2 y por UART :
 
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/3de4a245-e53e-40c5-a689-ffa261383cbf)
 
+Las tareas o Task5, 6, 7 y 8 permiten modificar la fecha , hora y alarmas de tiempo y temperatura a otro valor que el usuario eliga(Task5) ; mientras que las tareas 6 y 7 escriben dicha informacion en los dispositivos externos a traves del protocolo I2C : 
 
+<B>1.</B> El tiempo actual(Date, Month, Year,  Hour, Minute, Seconds) se escribe dirctamente en el <B>DS1307</B>
+
+<B>2.</B> Las alarmas de tiempo(Hour, Minute, Seconds) y las de temperatura (TH, TL) se escribe dirctamente en la <B>EEPROM 24C32</B>
