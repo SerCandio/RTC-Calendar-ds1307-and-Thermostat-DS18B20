@@ -1,0 +1,10 @@
+El archivo "CLOCK_CALENDAR_RealBaord.X.production.hex" debe cargarse directamente a un PIC18F45K50 en FISICO usando un Pickit3
+
+No lo cargue a la simulacion de Proteus, no funcionara !!!!
+
+El archivo de simulacion lo encuentra aqui: 
+
+https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/tree/main/Simulacion
+
+
+GRACIAS  ::::::::::::::::::::::::::::::::::   :D 
