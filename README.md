@@ -61,8 +61,14 @@ Finalmente en la tarea 8 o <B>Task 8</B> se imprime el valor de las alarmas cada
 (Resultado consola serial simulacion y placa)
 
 <h2 dir="auto" tabindex="-1">Nota</h2>
-La EEPROM 24C32 y el RTC DS1307 ya vienen incorporados en un modulo <B><A HREF="https://www.indianhobbycenter.com/products/real-time-clock-ds1307-module-tiny-rtc-i2c-module">DS1307</A></B> como se muestra a continuacion:
+La EEPROM 24C32 y el RTC DS1307 ya vienen incorporados en un modulo <B><A HREF="https://www.indianhobbycenter.com/products/real-time-clock-ds1307-module-tiny-rtc-i2c-module">Tiny RTC I2C</A></B> como se muestra a continuacion:
 
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/16f03f60-07e8-4ffe-9482-4c37a5c0b281)
 
+El RTC de Fecha, hora y Calendario es capaz de seguir actualziando sus registros de tiempo incluso no haya voltaje de operacion en Vcc como se indica su <B><A HREF="https://pdf1.alldatasheet.es/datasheet-pdf/view/254791/MAXIM/DS1307.html">datasheet</A></B> :
 
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/7d798725-3889-46ec-8ebf-933477e24d3b)
+
+Sin embargo, para que dicha caracteristica de respaldo este disponible, se debe desoldar el diodo <B>D1 1N4148</B> , y en lugar la resistencia <B>R6</B> de 510k debe reemplazarse por un bypass a fin que la bateria alimente directamente al pin <B>VBAT</B>
+
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/92e09b5d-2602-4a61-9c75-aaadd2d67cb4)
