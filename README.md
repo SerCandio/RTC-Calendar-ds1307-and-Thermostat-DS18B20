@@ -1,5 +1,5 @@
 # RTC-Calendar-ds1307-and-Thermostat-DS18B20
-Mini- Proyecto de Reloj de Tiempo Real (usando ds1307) con alarma de Buzzer y Termostato de Temperatura(con el sensor ds18b20) con alarmas de limites
+Mini- Proyecto de Reloj de Tiempo Real (usando ds1307) con alarma de Buzzer y Termostato de Temperatura(con el sensor ds18b20) con alarmas de limites administrado por un RTOS basado en Timer 1 y algoritmo tipo Task Scheduler de invocacion de tareas
 
 ![IMG_20240129_152216](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/cd4a2763-563a-4bb3-833b-6f79ae9c92cc)
 
