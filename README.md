@@ -56,7 +56,7 @@ Recuerde que el ciclo de escritura se tarda alrededor de 15ms. El usuario recibe
 
 Finalmente en la tarea 8 o <B>Task 8</B> se imprime el valor de las alarmas cada 5 segundos por consola Serial asi como el valor actual de las alarmas acorde:
 
-![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/886f75e6-e4e0-43ef-b960-1341e8e7f8d2)
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/a35478a9-51d6-4235-8a3e-b56c8c9334d0)
 
 (Resultado consola serial simulacion y placa)
 
