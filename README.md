@@ -76,3 +76,6 @@ El RTC de Fecha, hora y Calendario es capaz de seguir actualziando sus registros
 Sin embargo, para que dicha caracteristica de respaldo este disponible, se debe desoldar el diodo <B>D1 1N4148</B> , y en lugar la resistencia <B>R6</B> de 510k debe reemplazarse por un bypass a fin que la bateria alimente directamente al pin <B>VBAT</B>
 
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/92e09b5d-2602-4a61-9c75-aaadd2d67cb4)
+
+<h2 dir="auto" tabindex="-1">Precaucion</h2> 
+Si la pila CR2032 es de una version no recargable, la modificacion descrita en el apartado anterior es obligatoria, caso contrario podria dañarse o explotar la bateria
