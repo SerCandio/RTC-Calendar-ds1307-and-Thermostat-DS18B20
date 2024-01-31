@@ -58,6 +58,10 @@ Finalmente en la tarea 8 o <B>Task 8</B> se imprime el valor de las alarmas cada
 
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/a35478a9-51d6-4235-8a3e-b56c8c9334d0)
 
+Podriamos entocnes resumir las 4 ultimas tareas como sigue:
+
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/49bbf923-c97a-4d60-87ea-6e0f723d7352)
+
 (Resultado consola serial simulacion y placa)
 
 <h2 dir="auto" tabindex="-1">Nota</h2>
