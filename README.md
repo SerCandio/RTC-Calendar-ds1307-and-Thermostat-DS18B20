@@ -67,7 +67,7 @@ Podriamos entocnes resumir las 4 ultimas tareas como sigue:
 <h2 dir="auto" tabindex="-1">Nota</h2>
 La EEPROM 24C32 y el RTC DS1307 ya vienen incorporados en un modulo <B><A HREF="https://www.indianhobbycenter.com/products/real-time-clock-ds1307-module-tiny-rtc-i2c-module">Tiny RTC I2C</A></B> como se muestra a continuacion:
 
-![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/16f03f60-07e8-4ffe-9482-4c37a5c0b281)
+![2_ff754772-5a08-4878-bc9b-8a42187f8af8](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/1158caa0-4b75-4d5c-92da-6ca9e6853ca8)
 
 El RTC de Fecha, hora y Calendario es capaz de seguir actualziando sus registros de tiempo incluso no haya voltaje de operacion en Vcc como se indica su <B><A HREF="https://pdf1.alldatasheet.es/datasheet-pdf/view/254791/MAXIM/DS1307.html">datasheet</A></B> :
 
