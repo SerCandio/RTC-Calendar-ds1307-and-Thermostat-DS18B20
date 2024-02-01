@@ -2,9 +2,10 @@
 Mini- Proyecto de Reloj de Tiempo Real (usando ds1307) con alarma de Buzzer y Termostato de Temperatura(con el sensor ds18b20) con alarmas de limites administrado por un RTOS basado en Timer 1 y algoritmo tipo Task Scheduler de invocacion de tareas
 
 ![IMG_20240129_152216](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/cd4a2763-563a-4bb3-833b-6f79ae9c92cc)
+<I><B>Figura 1.- Ejecucion de tareas en tiempo real</B></I>
 
 <h2 dir="auto" tabindex="-1">DESCRIPCION Y EXPLICACION:</h2>
-Este sencillo proyecto es capaz de mostrar la informacion de tiempo real conformado por la fecha y la hora asi como la informacion de temperatura ambiente a traves de un display LCD16X2 y por puerto de consola EUSART ; asimismo el usuario sera capaz de pre-establecer una fecha y hora acorde la actual y establecer alarmas sea de tiempo o de limite alto o bajo de temperatura.
+Este sencillo proyecto es capaz de mostrar la informacion de tiempo real conformado por la fecha y la hora asi como la informacion de temperatura ambiente a traves de un <B><A HREF="https://www.ebay.com/itm/293186602264?chn=ps&norover=1&mkevt=1&mkrid=21565-165579-560236-2&mkcid=2&itemid=293186602264&targetid=293946777986&device=c&mktype=pla&googleloc=9060924&poi=&campaignid=19723034349&mkgroupid=141566926690&rlsatarget=pla-293946777986&abcId=&merchantid=102019429&gclid=Cj0KCQiAn-2tBhDVARIsAGmStVnM0kLHaYehLvTRdnJPwh6Jd6zg_dvRAQl_C5zd7E8ZXKiwgxUjkxsaApBCEALw_wcB">display LCD16X2 con interfaz I2C</A></B> y por puerto de consola <B>UART(9600, 8, No parity, 1 Stop bit, NFC)</B>; asimismo el usuario sera capaz de pre-establecer una fecha y hora acorde la actual y establecer alarmas sea de tiempo o de limite alto o bajo de temperatura.
 
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/39d2f73f-b6e3-4b77-acdd-0fcc4452da11)
 
