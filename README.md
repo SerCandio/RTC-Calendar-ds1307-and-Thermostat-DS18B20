@@ -31,6 +31,18 @@ Entonces estructuramos 8 tareas a fin de leer el sensor de temperatura ds18b20 y
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/3de4a245-e53e-40c5-a689-ffa261383cbf)
 <I><B>Figura 4.- Flujo de las 4 primeras tareas</B></I>
 
+Cuando el programa <B>"main.c"</B> empieza a ejecutarse, se ira mostrando la siguiente informacion de tiempo y temperatura tanto en  la LCD de 16X2 por I2C como por la consola UART(Simulacion de Proteus):
+
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/76a6b803-3c56-40e2-8291-3888d94915db)
+<I><B>Figura 5.- Ejecucion de las 4 primeras tareas: Task1 -- > Task 4 (LCD de 16X2 I2C)</B></I>
+
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/f7566b88-e7c7-4eb3-9aca-95489850dcbc)
+<I><B>Figura 6.- Ejecucion de las 4 primeras tareas: Task1 -- > Task 4 (Consola UART)</B></I>
+
+A nivel de <B>Implementacion fisica</B> en una placa prototipo unidos con los modulos <B>Tiny RTC I2C</B> y <B>LCD 16X2</B> obtenemos el mismo resultado:
+
+(imagen implememtacion BOARD)
+
 Las tareas o Task5, 6, 7 y 8 permiten modificar la fecha , hora y alarmas de tiempo y temperatura a otro valor que el usuario eliga(Task5) ; mientras que las tareas 6 y 7 escriben dicha informacion en los dispositivos externos a traves del protocolo I2C : 
 
 <B>1.</B> El tiempo actual(Date, Month, Year,  Hour, Minute, Seconds) se escribe dirctamente en el <B><A HREF="https://www.sparkfun.com/datasheets/Components/DS1307.pdf">DS1307</A></B>
