@@ -77,17 +77,27 @@ Por ejemplo, si presionamos y mantenemos presionado el boton <B>SHIFT_ALARM_Butt
 
 Analogamente , si presionamos dicho boton hasta 2 veces mas podremos modifcar los "minutos" y las  "horas" respectivamente. Tenga en cuenta que la modificacion del parametro actual se hace efectiva con los botones de incremento <B>INC_Button_In()</B> o decremento <B>DEC_Button_In()</B> pudiendo entonces establecer alguna alarma de tiempo como se ve en la Figura 10
 
-Podemos tambien modificar las alarmas de temperatura 
+Si seguimos presionando el boton de <B>SHIFT_ALARM_Button_In()</B>, accederemos al menu de alarmas de temperatura como se muestra en la Figura 11. Y de la misma manera si presionamos ls botones <B>INC_Button_In()</B> o <B>DEC_Button_In()</B> modificaremos los parametros respectivos:
+
+![IMG_20240201_165725](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/37ffd91d-fdaf-41d5-bbd9-4d6d11795ae4)
+<I><B>Figura 10.- Modificacion asincrona de la alarmas de temperatura: TH, TL</B></I>
+
+Entre otros parametros que podemos modificar estan la cadencia de tiempo(<B><I>Time Cadence</I></B>) que nos define el tiempo en minutos que la alarma va a durar asi como la isteresis de temperatura ((<B><I>Temperature Ofset</I></B>)) que es el margen de error a partir del cual podria activarse la alarma de temperatura:
+
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/5edda146-641d-40a7-bf6b-901073e37704)
+<I><B>Figura 11.- Modificacion de parametros adicionales: duracion de alarma en minutos y offset de temperatura</B></I>
 
 <B>4.</B> Pero no ocurrira ninguna transferencia hacia la EEPROM hasta que todas las alarmas hayan sido actualizadas, por lo que <B>SHIFT_ALARM_Button_In()</B> debera presionarse unas 8 veces y posterioremente en la tarea 7 o <B>"Task 7"</B>se transfiera los 7 bytes empezando desde la direccion 0x0000 : 
 
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/e4e457a5-dfaf-4cd7-8970-75de729fa2a6)
 
-<I><B>Figura 6.- Seccion de codigo de la tarea 7 o "Task 7": Escribir en la EEPROM</B></I>
+<I><B>Figura 12.- Seccion de codigo de la tarea 7 o "Task 7": Escribir en la EEPROM</B></I>
 
-Dando como resultado (B>"Task 7"</B>):
+Si se llega a ejecutar la tarea 7 o <B>"Task 7"</B> , el usuario recibira un aviso de confirmacion de escritura en alarmas:
 
-("All Alarms Update OK images, proteus y Board")
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/75c6be75-84c5-4f8c-a2e0-f66e28a7b375)
+
+<I><B>Figura 13.- Aviso de actualziacion de alarmas satisfactorio</B></I>
 
 Tenga en cuenta que la <B><A HREF="https://ww1.microchip.com/downloads/en/devicedoc/21061h.pdf">EEPROM 24C32</A></B> tiene un modo de escritura por pagina, lo que ahorra tiempo de escritura y ahorra vida util de la memoria no volatil(ver datasheet pagina 6):
 
@@ -97,7 +107,7 @@ Tenga en cuenta que la <B><A HREF="https://ww1.microchip.com/downloads/en/device
 
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/a35478a9-51d6-4235-8a3e-b56c8c9334d0)
 
-<I><B>Figura 7.- Seccion de codigo de la tarea 8 o "Task 8"_ Mostrar Alarmas</B></I>
+<I><B>Figura 14.- Seccion de codigo de la tarea 8 o "Task 8"_ Mostrar Alarmas</B></I>
 
 Podriamos entocnes resumir las 4 ultimas tareas como sigue:
 
