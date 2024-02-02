@@ -31,17 +31,26 @@ Entonces estructuramos 8 tareas a fin de leer el sensor de temperatura ds18b20 y
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/3de4a245-e53e-40c5-a689-ffa261383cbf)
 <I><B>Figura 4.- Flujo de las 4 primeras tareas</B></I>
 
-Cuando el programa <B>"main.c"</B> empieza a ejecutarse, se ira mostrando la siguiente informacion de tiempo y temperatura tanto en  la LCD de 16X2 por I2C como por la consola UART(Simulacion de Proteus):
+Cuando el programa <B>"main.c"</B> empieza a ejecutarse, se ira mostrando la siguiente informacion de tiempo y temperatura tanto en  la LCD de 16X2 :
 
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/76a6b803-3c56-40e2-8291-3888d94915db)
 <I><B>Figura 5.- Ejecucion de las 4 primeras tareas: Task1 -- > Task 4 (LCD de 16X2 I2C)</B></I>
 
+Asimismo, la data e informacion tambien se muestra por la consola de usuario UART(<B>Virtual Terminal Proteus</B>):
+
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/f7566b88-e7c7-4eb3-9aca-95489850dcbc)
 <I><B>Figura 6.- Ejecucion de las 4 primeras tareas: Task1 -- > Task 4 (Consola UART)</B></I>
 
-A nivel de <B>Implementacion fisica</B> en una placa prototipo unidos con los modulos <B>Tiny RTC I2C</B> y <B>LCD 16X2</B> obtenemos el mismo resultado:
+A nivel de <B>Implementacion fisica</B> en una placa prototipo unidos con los modulos <B><A HREF="https://nskelectronics.in/Tiny%20RTC%20Module">Tiny RTC I2C</A></B>  y <B><A HREF="https://www.ebay.com/itm/293186602264?chn=ps&norover=1&mkevt=1&mkrid=21565-165579-560236-2&mkcid=2&itemid=293186602264&targetid=293946777986&device=c&mktype=pla&googleloc=9060924&poi=&campaignid=19723034349&mkgroupid=141566926690&rlsatarget=pla-293946777986&abcId=&merchantid=102019429&gclid=Cj0KCQiAn-2tBhDVARIsAGmStVnM0kLHaYehLvTRdnJPwh6Jd6zg_dvRAQl_C5zd7E8ZXKiwgxUjkxsaApBCEALw_wcB">LCD 16X2</A></B>  obtenemos el mismo resultado:
 
-(imagen implememtacion BOARD)
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/a1fc6e0c-7cb1-4d70-b2b8-d2d4194df463)
+<I><B>Figura 7.- Implementacion de Task1 -- > Task 4 (LCD de 16X2 I2C)</B></I>
+
+Para poder ver en resultado del debug en consola por puerto Serial, necesitaremos programas como <B><A HREF="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty</A></B> y los drivers de <B><A HREF="https://ftdichip.com/drivers/">FTDI</A></B>
+
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/02c86393-b70d-49a9-beff-c975c7057ae7)
+
+<I><B>Figura 8.- Implementacion de Task1 -- > Task 4 (Consola UART)</B></I>
 
 Las tareas o Task5, 6, 7 y 8 permiten modificar la fecha , hora y alarmas de tiempo y temperatura a otro valor que el usuario eliga(Task5) ; mientras que las tareas 6 y 7 escriben dicha informacion en los dispositivos externos a traves del protocolo I2C : 
 
@@ -59,9 +68,16 @@ Las tareas o Task5, 6, 7 y 8 permiten modificar la fecha , hora y alarmas de tie
 
 ![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/1583a99b-4988-48ca-8d0e-0f56dddec409)
 
-<I><B>Figura 5.- Seccion de codigo de la tarea 5 o "Task 5": Leer pulsadores</B></I>
+<I><B>Figura 9.- Seccion de codigo de la tarea 5 o "Task 5": Leer pulsadores</B></I>
 
-(mostrar resultados de "Alarm Parameters" de LCD)
+Por ejemplo, si presionamos y mantenemos presionado el boton <B>SHIFT_ALARM_Button_In()</B> por primera vez, podremos modificar la alarma de tiempo el parametro "segundos": 
+
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/d68a618f-5677-4efb-be0a-fee6bc6a06e6)
+<I><B>Figura 10.- Modificacion asincrona de la alarma de tiempo</B></I>
+
+Analogamente , si presionamos dicho boton hasta 2 veces mas podremos modifcar los "minutos" y las  "horas" respectivamente. Tenga en cuenta que la modificacion del parametro actual se hace efectiva con los botones de incremento <B>INC_Button_In()</B> o decremento <B>DEC_Button_In()</B> pudiendo entonces establecer alguna alarma de tiempo como se ve en la Figura 10
+
+Podemos tambien modificar las alarmas de temperatura 
 
 <B>4.</B> Pero no ocurrira ninguna transferencia hacia la EEPROM hasta que todas las alarmas hayan sido actualizadas, por lo que <B>SHIFT_ALARM_Button_In()</B> debera presionarse unas 8 veces y posterioremente en la tarea 7 o <B>"Task 7"</B>se transfiera los 7 bytes empezando desde la direccion 0x0000 : 
 
