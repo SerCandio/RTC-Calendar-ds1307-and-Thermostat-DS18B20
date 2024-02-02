@@ -1,0 +1,2 @@
+# Esquema de conexiones:
+
