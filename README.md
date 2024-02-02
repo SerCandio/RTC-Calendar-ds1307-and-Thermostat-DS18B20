@@ -43,7 +43,8 @@ Asimismo, la data e informacion tambien se muestra por la consola de usuario UAR
 
 A nivel de <B>Implementacion fisica</B> en una placa prototipo unidos con los modulos <B><A HREF="https://nskelectronics.in/Tiny%20RTC%20Module">Tiny RTC I2C</A></B>  y <B><A HREF="https://www.ebay.com/itm/293186602264?chn=ps&norover=1&mkevt=1&mkrid=21565-165579-560236-2&mkcid=2&itemid=293186602264&targetid=293946777986&device=c&mktype=pla&googleloc=9060924&poi=&campaignid=19723034349&mkgroupid=141566926690&rlsatarget=pla-293946777986&abcId=&merchantid=102019429&gclid=Cj0KCQiAn-2tBhDVARIsAGmStVnM0kLHaYehLvTRdnJPwh6Jd6zg_dvRAQl_C5zd7E8ZXKiwgxUjkxsaApBCEALw_wcB">LCD 16X2</A></B>  obtenemos el mismo resultado:
 
-![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/a1fc6e0c-7cb1-4d70-b2b8-d2d4194df463)
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/002e85fb-bb6b-4910-9651-453ebb406ac5)
+
 <I><B>Figura 7.- Implementacion de Task1 -- > Task 4 (LCD de 16X2 I2C)</B></I>
 
 Para poder ver en resultado del debug en consola por puerto Serial, necesitaremos programas como <B><A HREF="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty</A></B> y los drivers de <B><A HREF="https://ftdichip.com/drivers/">FTDI</A></B>
@@ -72,14 +73,16 @@ Las tareas o Task5, 6, 7 y 8 permiten modificar la fecha , hora y alarmas de tie
 
 Por ejemplo, si presionamos y mantenemos presionado el boton <B>SHIFT_ALARM_Button_In()</B> por primera vez, podremos modificar la alarma de tiempo el parametro "segundos": 
 
-![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/d68a618f-5677-4efb-be0a-fee6bc6a06e6)
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/64eb497d-b8eb-468f-a110-90f7839d1e1b)
+
 <I><B>Figura 10.- Modificacion asincrona de la alarma de tiempo</B></I>
 
 Analogamente , si presionamos dicho boton hasta 2 veces mas podremos modifcar los "minutos" y las  "horas" respectivamente. Tenga en cuenta que la modificacion del parametro actual se hace efectiva con los botones de incremento <B>INC_Button_In()</B> o decremento <B>DEC_Button_In()</B> pudiendo entonces establecer alguna alarma de tiempo como se ve en la Figura 10
 
 Si seguimos presionando el boton de <B>SHIFT_ALARM_Button_In()</B>, accederemos al menu de alarmas de temperatura como se muestra en la Figura 11. Y de la misma manera si presionamos ls botones <B>INC_Button_In()</B> o <B>DEC_Button_In()</B> modificaremos los parametros respectivos:
 
-![IMG_20240201_165725](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/37ffd91d-fdaf-41d5-bbd9-4d6d11795ae4)
+![image](https://github.com/SerCandio/RTC-Calendar-ds1307-and-Thermostat-DS18B20/assets/106831539/7e5fa31e-e032-46e3-b907-965acaff0b0b)
+
 <I><B>Figura 10.- Modificacion asincrona de la alarmas de temperatura: TH, TL</B></I>
 
 Entre otros parametros que podemos modificar estan la cadencia de tiempo(<B><I>Time Cadence</I></B>) que nos define el tiempo en minutos que la alarma va a durar asi como la isteresis de temperatura ((<B><I>Temperature Ofset</I></B>)) que es el margen de error a partir del cual podria activarse la alarma de temperatura:
